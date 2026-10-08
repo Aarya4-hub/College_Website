@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABC College</title>
+  <style>
+    body { font-family: Verdana, sans-serif; margin:0; background:#eef2f3; }
+    header { background:#003366; color:white; padding:20px; text-align:center; }
+    nav a { margin:0 15px; color:white; text-decoration:none; }
+    section { padding:40px; }
+    .courses { display:flex; justify-content:center; flex-wrap:wrap; }
+    .course { background:white; border:1px solid #ccc; border-radius:8px; width:250px; margin:15px; padding:20px; text-align:center; }
+    footer { background:#003366; color:white; text-align:center; padding:15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ABC College 🎓</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>ABC College is dedicated to providing quality education and fostering innovation among students.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses">
+      <div class="course">
+        <h3>Bachelor of Science</h3>
+        <p>Duration: 3 Years</p>
+      </div>
+      <div class="course">
+        <h3>Bachelor of Arts</h3>
+        <p>Duration: 3 Years</p>
+      </div>
+      <div class="course">
+        <h3>Master of Computer Applications</h3>
+        <p>Duration: 2 Years</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 ABC College. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for contacting us! We'll get back to you soon.");
+    }
+  </script>
+</body>
+</html>
